@@ -1,16 +1,47 @@
-# React + Vite
+# Framely
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A movie discovery web app built with React. Browse popular movies, search by title, filter by genre, open a details page with plot, runtime, cast and trailer, or get a random pick with the "Surprise me" button.
 
-Currently, two official plugins are available:
+**Live demo:** https://framely-app.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Popular movies with "Load more" pagination
+- Search with a short delay so the API is not called on every keystroke
+- Genre filter
+- Movie details page: poster, backdrop, rating, runtime, director, genres, plot, cast and trailer link
+- "Surprise me" button that opens a random well-known movie
+- Responsive layout and an animated burger menu
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the ESLint configuration
+- React with Vite
+- React Router
+- TMDB API
+- Plain CSS (grid, flexbox)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run locally
+
+```
+git clone https://github.com/nikolaivanovic1926/framely.git
+cd framely
+npm install
+```
+
+Create a `.env` file in the project root:
+
+```
+VITE_TMDB_KEY=your_tmdb_api_key
+```
+
+Then start the dev server:
+
+```
+npm run dev
+```
+
+You can get a free API key at https://www.themoviedb.org/settings/api
+
+## Credits
+
+This product uses the TMDB API but is not endorsed or certified by TMDB.
